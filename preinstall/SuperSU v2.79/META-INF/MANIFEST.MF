@@ -1,0 +1,177 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: Jo096EthS+3+nBqxffEDmY/Ymxo=
+
+Name: x64/supolicy
+SHA1-Digest: Gli5DXQElxdPp9nVbjFQoDLI4uQ=
+
+Name: common/launch_daemonsu.sh
+SHA1-Digest: qIZLzTt7t6kvlnPGmGLbWMJaDI0=
+
+Name: armv7/libsupol.so
+SHA1-Digest: Mnjt7DcM1TUaFUqY6a19JfVLq/0=
+
+Name: arm/su
+SHA1-Digest: HD2d4en0ntE6hedvxvnM905u8do=
+
+Name: x64/su
+SHA1-Digest: zws+MgjHXt6UbG/m4OFQ++wef1Q=
+
+Name: arm64/sukernel
+SHA1-Digest: 1duBw9sd2VoRquWvlYIPAVE9wmI=
+
+Name: x86/sukernel
+SHA1-Digest: iEuHDVj/pjYc/8l6bmIKcmFMA90=
+
+Name: x86/chattr
+SHA1-Digest: +eQOboQk8DOLbKA7QigfBCqi4XY=
+
+Name: x86/chattr.pie
+SHA1-Digest: HUwAneUqyxA+cof4C5ICXi+BnnM=
+
+Name: armv7/sukernel
+SHA1-Digest: uB+lK9gz1A+63xItyKIjMWCLIa4=
+
+Name: armv7/supolicy
+SHA1-Digest: o0YdygzTj4ZXTLzNrHBMAra9J04=
+
+Name: mips64/su
+SHA1-Digest: x5OnoNqqF4EQvFqZp+7dSpvDBQc=
+
+Name: mips/supolicy
+SHA1-Digest: Ad0TX061qFrx4M8mn6hVDivkVWI=
+
+Name: common/000000deepsleep
+SHA1-Digest: xVb3U9CpLu3S9z7JOycfYlqoHhA=
+
+Name: common/hexpatch
+SHA1-Digest: +wPnLhmBHD+dUoJET8vleF8Jbto=
+
+Name: armv7/suinit
+SHA1-Digest: vfnnQHe2SYjQJ9rrRXGOQ0erc1U=
+
+Name: common/chromeos/kernel.bootloader
+SHA1-Digest: rcg7GeeTSRscbqD9i0bNnzLlkvw=
+
+Name: arm64/su
+SHA1-Digest: qPEcxJFbhPf8WSqDKQ16tSDlA0M=
+
+Name: arm/chattr
+SHA1-Digest: Fkc4cFVlxcol86TUh1wc7i45TeM=
+
+Name: mips/libsupol.so
+SHA1-Digest: ZZ068+i/yaJFfNrD01u+MJH5ejA=
+
+Name: x86/suinit
+SHA1-Digest: SR3Vxpwcnm2tKFLqvXXVpjLxQv8=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: 9YkhJzgxR1fIq366UDdbInOiUY4=
+
+Name: armv7/su
+SHA1-Digest: b7karmsHebd29MB0aV2vZ/L38vU=
+
+Name: x86/supolicy
+SHA1-Digest: MpnZDptFCvagDhTF5uSSKeC+GyI=
+
+Name: mips64/suinit
+SHA1-Digest: dYVtFZ/b0XtEsHvjAMVTl4mT7/E=
+
+Name: mips64/sukernel
+SHA1-Digest: mJhF5pL96NdIIdtBsJn1c7yUKvw=
+
+Name: arm/chattr.pie
+SHA1-Digest: qoEQYzse93l3q+ZogsUhBIhPVbw=
+
+Name: arm/supolicy
+SHA1-Digest: N6nR4YjheZuYUOzgeUL9dtOn3ns=
+
+Name: arm/libsupol.so
+SHA1-Digest: NqIV9P2LCMZayTMW/zheA7WTYXc=
+
+Name: arm64/suinit
+SHA1-Digest: LHNkWvh6ZRSSbmIOHpdJLp8sEVo=
+
+Name: common/chromeos/kernel.keyblock
+SHA1-Digest: zeiSVt//JG/gc0RW0507ZEaYVxU=
+
+Name: mips/su
+SHA1-Digest: 4uz54HSy4Gpx5eKKCM+H7su1Kjg=
+
+Name: common/install-recovery.sh
+SHA1-Digest: RQJ5Fy/ZVZiz35w8g2YffpQg4yM=
+
+Name: common/init.supersu.rc
+SHA1-Digest: UbmdKppCl39FweaYDE8drDHe6fw=
+
+Name: arm/sukernel
+SHA1-Digest: K/0AYmorLT2fPkN6EE2APU9wa4U=
+
+Name: mips/chattr.pie
+SHA1-Digest: ogeYjI3xhCLMro0LV/aapqg8XXY=
+
+Name: mips64/supolicy
+SHA1-Digest: SxymVgosPGGOQKysbh5sot3h7y8=
+
+Name: common/file_contexts_image
+SHA1-Digest: nJmgRQuTQgagqQM2AWGSUAl6zRo=
+
+Name: x86/libsupol.so
+SHA1-Digest: DNPSw71IH2oQRNUb98nQ2430Nww=
+
+Name: arm/suinit
+SHA1-Digest: MP12p5/OtpnIMxgDO/uzYuMBf2s=
+
+Name: arm64/libsupol.so
+SHA1-Digest: 0UtH79/6rBJYZN1qfljKgGsePKM=
+
+Name: x64/suinit
+SHA1-Digest: jxkwEfQg6Micvfb3ngNH8BoGVPw=
+
+Name: x86/su.pie
+SHA1-Digest: zPAh0ttKICLHHUWLRuNkieGqVck=
+
+Name: common/chromeos/kernel.config
+SHA1-Digest: rcg7GeeTSRscbqD9i0bNnzLlkvw=
+
+Name: mips/suinit
+SHA1-Digest: /LYKKVsel8SVPsDPCP4RtkcanUA=
+
+Name: mips64/libsupol.so
+SHA1-Digest: BwFsGYCBnNMxOETEib2exgvoeu8=
+
+Name: x64/libsupol.so
+SHA1-Digest: GAN2IPAR3s9YjG3l0Pr8gx2a3OY=
+
+Name: x64/sukernel
+SHA1-Digest: hTg7aGueLUk9Kf3m3ZSQURMe/R8=
+
+Name: arm64/supolicy
+SHA1-Digest: V9rctonCeMpMGuIkbzkVr0+19DY=
+
+Name: x86/su
+SHA1-Digest: I2+86vEanlgLQvxJ6Mlk6YEydQc=
+
+Name: arm64/chromeos/futility
+SHA1-Digest: Evd5+Hi0p6Pk1PV8KSghtak9Cdc=
+
+Name: common/99SuperSUDaemon
+SHA1-Digest: 3AYSllvBRJ0eFpxgJghu8XgSuPQ=
+
+Name: common/Superuser.apk
+SHA1-Digest: JbX7Dgpu0LxtY0V0TigrYSPTquo=
+
+Name: mips/sukernel
+SHA1-Digest: X4FP2rNaU6/ZSqeSNTcYeZ6A09M=
+
+Name: common/frp_install
+SHA1-Digest: EoU4dn5yRHArRmaXyJr0cSIVzqU=
+
+Name: armv7/chattr.pie
+SHA1-Digest: qoEQYzse93l3q+ZogsUhBIhPVbw=
+
+Name: common/chromeos/kernel_data_key.vbprivk
+SHA1-Digest: oLkG4w/5HLb7fes+kXTkmmnIhY4=
+

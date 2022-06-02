@@ -1,0 +1,178 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: 7fFuxtZqX6sLwsdzmMYySFtxt68=
+Created-By: 1.0 (Android SignApk)
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: YQwO4jPx0Rr7mGSfEwGaGWDG6xo=
+
+Name: x64/supolicy
+SHA1-Digest: jghEq7/mKMXy4aHaY1MEq3Hhimk=
+
+Name: common/launch_daemonsu.sh
+SHA1-Digest: IA582D53BTLcghNoFOy4cuRPD+0=
+
+Name: armv7/libsupol.so
+SHA1-Digest: +16TAtsAxBeQ8imjf5gFGqHydoE=
+
+Name: arm/su
+SHA1-Digest: /ZYwe0lBGhzNwL/1RHc2dr1OxF4=
+
+Name: x64/su
+SHA1-Digest: /bIDh9XEPUSKggqxrmzom0D5wdk=
+
+Name: arm64/sukernel
+SHA1-Digest: PzoMJ6V2gRb8i4tjIi/hxhyQhC4=
+
+Name: x86/sukernel
+SHA1-Digest: VH5jCwiGQnzSZtUST6fJnPD6e+w=
+
+Name: x86/chattr
+SHA1-Digest: d0yiEf5ZywFzedOG8jPG1ienjFg=
+
+Name: x86/chattr.pie
+SHA1-Digest: C8ut7KMVjn5rwy48gSKXGyHsalM=
+
+Name: armv7/sukernel
+SHA1-Digest: 6mu2hLi80qeMkxq2u2l6ME94fOc=
+
+Name: armv7/supolicy
+SHA1-Digest: 2AaI4UN9FgC4Iog3qSFqMiCz1Q0=
+
+Name: mips64/su
+SHA1-Digest: 5uzcQHN5/szQOJuKV6WOn9IUATs=
+
+Name: mips/supolicy
+SHA1-Digest: Jqf1DXtyn2kGPRLrI1u2hdu78k0=
+
+Name: common/000000deepsleep
+SHA1-Digest: Ib0XZvmRJK2QPAAXfAIoh0uyIyk=
+
+Name: common/hexpatch
+SHA1-Digest: +a+mJWhj/QT/uH5dHCfwRjaauQo=
+
+Name: armv7/suinit
+SHA1-Digest: 5gsQEWPfkrqI8tgYwQyxH6QUurc=
+
+Name: common/chromeos/kernel.bootloader
+SHA1-Digest: TKbDK3cPUDgKAh4y/rO9bW+KC/s=
+
+Name: arm64/su
+SHA1-Digest: vg9IUHHB6BXKNb9ehQuO+Nz0tTQ=
+
+Name: arm/chattr
+SHA1-Digest: 8tzPclmGQ4X0DMY44JzbeKrlYo4=
+
+Name: mips/libsupol.so
+SHA1-Digest: Mt83z3H4whTVeH5Of1SGfzbAA5Q=
+
+Name: x86/suinit
+SHA1-Digest: 3xavmvPXyisgRaqhNVb6eRfC6Y0=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: m2q90qWdAqaMsWccSy+hTqnmJtE=
+
+Name: armv7/su
+SHA1-Digest: K7C995tnTmN449ARjhhuWseIOno=
+
+Name: x86/supolicy
+SHA1-Digest: 3l9+GgSCc55Z0FBBvDExJx7uuKI=
+
+Name: mips64/suinit
+SHA1-Digest: RaieN9dVx0s3ZCcxNphstw8tXC4=
+
+Name: mips64/sukernel
+SHA1-Digest: 9iVavIxbloCz4AXDUXJFjFoHgxU=
+
+Name: arm/chattr.pie
+SHA1-Digest: TRipcPCoh5V7zPuh4aPgQaCuVHA=
+
+Name: arm/supolicy
+SHA1-Digest: q4/3xf8cyK/zjFlVho6+xKcLp+U=
+
+Name: arm/libsupol.so
+SHA1-Digest: foAsb9N15dpCtdKvuooEs7f8N8A=
+
+Name: arm64/suinit
+SHA1-Digest: lqZxE8BBhjYSd1Xd9EN2/CMbxzY=
+
+Name: common/chromeos/kernel.keyblock
+SHA1-Digest: i7GeWsePfDhwTRG7DQGVayChFX4=
+
+Name: mips/su
+SHA1-Digest: K2cmb5fFp/r3YGQZ1EH3nA2CX+8=
+
+Name: common/install-recovery.sh
+SHA1-Digest: 5+9gBZCAYVMhy5YWyQgHW/d+sNY=
+
+Name: common/init.supersu.rc
+SHA1-Digest: oHXJFumgmUGda4kz8NAyNHxrNIs=
+
+Name: arm/sukernel
+SHA1-Digest: 7ILP0P9/rHoYtJUpZbYbkma8yDY=
+
+Name: mips/chattr.pie
+SHA1-Digest: gBRBCos0XvQGncDfZqz/OzV1/dU=
+
+Name: mips64/supolicy
+SHA1-Digest: CYWjZF8h8jbW6bpzeWQLv998GOc=
+
+Name: common/file_contexts_image
+SHA1-Digest: 4whmjjLZ8T5KO+YEBIPFP8B4baI=
+
+Name: x86/libsupol.so
+SHA1-Digest: /RTx0QDz8CmLMwRu2eUHo+xLWQU=
+
+Name: arm/suinit
+SHA1-Digest: go4Yed9MayTFV2G9chJwdLrESXI=
+
+Name: arm64/libsupol.so
+SHA1-Digest: HzPc2L7VbKAgknyMMPX72cUjuf0=
+
+Name: x64/suinit
+SHA1-Digest: Rs5jjRrgAqk4wFmfRpr8ukHQRDc=
+
+Name: x86/su.pie
+SHA1-Digest: r0ErG0sh62RsV6/eT09aROvW/XY=
+
+Name: common/chromeos/kernel.config
+SHA1-Digest: v2CDTpuV1G1SUqhbd9DAoZm75gI=
+
+Name: mips/suinit
+SHA1-Digest: sjrYHHMNrgOAoQTfTfYpWZv0aLw=
+
+Name: mips64/libsupol.so
+SHA1-Digest: 7yMylpjAFCUf64Vipo8zLz+kwAA=
+
+Name: x64/libsupol.so
+SHA1-Digest: C2PPtKLx3fney8z4ZuloB1+aboI=
+
+Name: x64/sukernel
+SHA1-Digest: uYlkAgqcjLOts+CnwSvjTMPE7g0=
+
+Name: arm64/supolicy
+SHA1-Digest: raQSPPjRAiHlpsEgVD6XMulxYFs=
+
+Name: x86/su
+SHA1-Digest: fb6K4HK8yTbUBMZRlbJPKAqGj3w=
+
+Name: arm64/chromeos/futility
+SHA1-Digest: NXnmw9vE0tco+0d0y3iRk2SO5Yc=
+
+Name: common/99SuperSUDaemon
+SHA1-Digest: gIoyt2gXURK+4PwhqFITPCmoZhc=
+
+Name: common/Superuser.apk
+SHA1-Digest: CrTZzwQYMEOn1cZB5hUoFwKzd9w=
+
+Name: mips/sukernel
+SHA1-Digest: hpQLno8Ya0AYA1ZZoRhdxDL93to=
+
+Name: common/frp_install
+SHA1-Digest: wYURtoen2YYFsBhclLAt3vRwpeg=
+
+Name: armv7/chattr.pie
+SHA1-Digest: qeva+cw48XFmI96CE4DICxhapHA=
+
+Name: common/chromeos/kernel_data_key.vbprivk
+SHA1-Digest: dHoIhc9VZ5CapUzHhctkjlYaLuo=
+
