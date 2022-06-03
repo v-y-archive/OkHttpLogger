@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+cd $(dirname $0)/preinstall/rootAVD
+sh rootAVD.sh InstallApps
+sh rootAVD.sh ${ANDROID_SDK_ROOT}/system-images/android-24/google_apis_playstore/x86/ramdisk.img
+
+if [[ $? != 0 ]]; then
+    echo Run android-24/google_apis_playstore/x86 emulator first with -no-snapshot option.
+    exit -1
+fi
+
+echo Now you can run the emulator again and flash xposed-systemless.zip with Magisk.
