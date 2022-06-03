@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 32
+    defaultConfig {
+        applicationId "my.xposedapp"
+        minSdkVersion 17
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+    }
+    compileOptions {
+        targetCompatibility = 11
+        sourceCompatibility = 11
+    }
+    namespace 'my.xposedapp'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly 'de.robv.android.xposed:api:82'
+    compileOnly 'de.robv.android.xposed:api:82:sources'
+}
