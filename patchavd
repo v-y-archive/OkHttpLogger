@@ -1,13 +1,21 @@
 #!/bin/bash
 
 
-cd $(dirname $0)/preinstall/rootAVD
-sh rootAVD.sh InstallApps
-sh rootAVD.sh ${ANDROID_SDK_ROOT}/system-images/android-24/google_apis_playstore/x86/ramdisk.img
+_(){ sed "s/^/    /" <($*); }
 
-if [[ $? != 0 ]]; then
-    echo Run android-24/google_apis_playstore/x86 emulator first with -no-snapshot option.
+if [[ -z $1 ]];then
+    echo USAGE: patchavd PATH/TO/ramdisk.img
+    echo 
+    echo No image specified. Available:
+    echo
+    _ find ${ANDROID_SDK_ROOT}/system-images -iname ramdisk.img
+    echo
+    echo Start the AVD with matching image before patching.
     exit -1
 fi
 
-echo Now you can run the emulator again and flash xposed-systemless.zip with Magisk.
+cd $(dirname $0)/preinstall/rootAVD
+sh rootAVD.sh $1
+
+# echo
+# echo [!] Restart the AVD and flash required modules using Magisk.
