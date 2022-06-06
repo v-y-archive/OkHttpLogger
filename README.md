@@ -55,7 +55,7 @@ Setup AVD emulator:
 
 * Open Magisk, if you will see "Requires Additional Setup" press OK, reboot.
 
-* Open Magisk, drag & drop `preinstall/xposed-systemless.zip` to the emulator, press `Modules`, install Xposed Magisk module.
+* Open Magisk, drag & drop [xposed-systemless-24.zip](https://github.com/vadimszzz/xposed-systemless/releases/tag/v90) to the emulator, press `Modules`, install Xposed Magisk module.
 
 # Performance tips
 
