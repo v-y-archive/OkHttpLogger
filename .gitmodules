@@ -1,0 +1,3 @@
+[submodule "preinstall/rootAVD"]
+	path = preinstall/rootAVD
+	url = https://github.com/newbit1/rootAVD
