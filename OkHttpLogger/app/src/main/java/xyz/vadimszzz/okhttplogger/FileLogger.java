@@ -28,13 +28,12 @@ public class FileLogger {
                 Application app = (Application) notNull(getContext());
                 this.fos = app.openFileOutput(this.filename, Context.MODE_APPEND);
             } catch(Exception e) {
-                OkHttpLogger.getXposedLogger().log("failed to start logger: " + e);
+                OkHttpLogger.getXposedLogger().log("failed to start logger: %s", e);
             }
 
-            FileLogger this$0 = this;
             Runtime.getRuntime().addShutdownHook(new Thread() {
                 public void run() {
-                    this$0.finalize();
+                    FileLogger.this.finalize(); // this$0
                 }
             });
         }
@@ -50,7 +49,7 @@ public class FileLogger {
         } catch(Exception e) {
         }
     }
-    
+
     /**
      * Append to log file in internal storage of the hooked app.
      * 
