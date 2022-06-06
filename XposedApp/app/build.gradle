@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 32
     defaultConfig {
-        applicationId "my.xposedapp"
+        applicationId "xyz.vadimszzz.okhttplogger"
         minSdkVersion 17
         targetSdkVersion 32
         versionCode 1
@@ -13,11 +13,14 @@ android {
         targetCompatibility = 11
         sourceCompatibility = 11
     }
-    namespace 'my.xposedapp'
+    namespace 'xyz.vadimszzz.okhttplogger'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.shamanland:xdroid-toaster:0.3.0'
+    implementation 'com.shamanland:xdroid-core:0.3.0'
+
     compileOnly 'de.robv.android.xposed:api:82'
     compileOnly 'de.robv.android.xposed:api:82:sources'
 }

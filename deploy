@@ -3,7 +3,7 @@
 
 adb install -r $(dirname $0)/XposedApp/app/build/outputs/apk/debug/app-debug.apk
 
-if [ $1 = "-r" ]; then
+if [[ $1 == "-r" ]]; then
     sleep 3
     echo Rebooting device
     adb reboot
