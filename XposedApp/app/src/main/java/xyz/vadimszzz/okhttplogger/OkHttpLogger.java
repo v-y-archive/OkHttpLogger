@@ -45,7 +45,7 @@ public class OkHttpLogger implements IXposedHookLoadPackage {
         //             callStart();
         //             try {
         //                 this.client.dispatcher().executed$okhttp(this);
-        //                 return getResponseWithInterceptorChain$okhttp();
+        //                 return getResponseWithInterceptorChain$okhttp(); // <----
         //             } finally {
         //                 this.client.dispatcher().finished$okhttp(this);
         //             }
@@ -55,7 +55,7 @@ public class OkHttpLogger implements IXposedHookLoadPackage {
         //     }
         // }
 
-        XposedHelpers.findAndHookMethod(RealCall, "execute", new XC_MethodHook() {
+        XposedHelpers.findAndHookMethod(RealCall, "getResponseWithInterceptorChain$okhttp", new XC_MethodHook() {
             protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
                 try {
                     String reqKey = "originalRequest";
