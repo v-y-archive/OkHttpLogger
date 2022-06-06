@@ -1,5 +1,0 @@
-#!/bin/bash
-
-
-# Fix "cannot add library /usr/local/android-sdk/emulator/qemu/darwin-x86_64/lib64/vulkan/libvulkan.dylib: failed"
-ln -s ${ANDROID_SDK_ROOT}/emulator/lib64 ${ANDROID_SDK_ROOT}/emulator/qemu/darwin-x86_64/lib64
