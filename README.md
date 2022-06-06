@@ -33,10 +33,13 @@ Make sure Java version >= 11. Build with gradle and most recent version of Andro
 # Install
 
 ```
-./deploy [-r] 					# OPTIONS: -r  	reboot device
+./deploy [-r]
+
+# OPTIONS:
+#  -r 		reboot device after installing
 ```
 
-The generated APK is in `XposedApp/build/outputs/apk/<buildtype>/`. Once installed, it should show up as `OkHttpLogger` in the Xposed Installer.
+The generated APK is in `OkHttpLogger/build/outputs/apk/<buildtype>/`. Once installed, it should show up as `OkHttpLogger` in the Xposed Installer.
 
 # Setup test environment
 
@@ -49,7 +52,7 @@ Setup AVD emulator:
 
 * ```
   ${ANDROID_SDK_ROOT}/emulator/emulator @Android7_x86_Xposed -no-snapshot -no-boot-anim -gpu host
-  ./patchavd ${ANDROID_SDK_ROOT}/system-images/android-27/google_apis_playstore/x86/ramdisk.img
+  ./patchavd ${ANDROID_SDK_ROOT}/system-images/android-24/google_apis_playstore/x86/ramdisk.img
   ${ANDROID_SDK_ROOT}/emulator/emulator @Android7_x86_Xposed -no-boot-anim -gpu host
   ```
 
@@ -66,15 +69,15 @@ Setup AVD emulator:
 2. Better create ARMv7 image without Google APIs. The latest ARMv7 image is Android 7 API 24.
 
 3. Fix "cannot add library /usr/local/android-sdk/emulator/qemu/darwin-x86_64/lib64/vulkan/libvulkan.dylib: failed":  
-   ` λ ln -s ${ANDROID_SDK_ROOT}/emulator/lib64 ${ANDROID_SDK_ROOT}/emulator/qemu/darwin-x86_64/lib64`
+   `ln -s ${ANDROID_SDK_ROOT}/emulator/lib64 ${ANDROID_SDK_ROOT}/emulator/qemu/darwin-x86_64/lib64`
 
-4. ` λ ${ANDROID_SDK_ROOT}/emulator/emulator @NAME -no-snapshot -no-boot-anim -gpu host -qemu -icount auto -smp 4,sockets=1,cores=2,threads=2,maxcpus=4`  
+4. `${ANDROID_SDK_ROOT}/emulator/emulator @NAME -no-snapshot -no-boot-anim -gpu host -qemu -icount auto -smp 4,sockets=1,cores=2,threads=2,maxcpus=4`  
 
    `maxcpus` must be a half of your real CPU cores for the best performance but i usually set all 4  
    `sockets` * `cores` * `threads` must be not greater than `maxcpus`  
    `smp` must be not greater than `maxcpus`  
 
-   You can test this examples:  
+   You can try this examples:  
 
    `-qemu -icount auto -smp 6,sockets=1,cores=6,threads=1,maxcpus=6`
    `-qemu -smp 6,sockets=1,cores=6,threads=1,maxcpus=6`
@@ -87,7 +90,7 @@ Setup AVD emulator:
 
 6. After successful booting press `...` button, `Snapshots`, `Take snapshot`. It will save your time if something goes wrong.
    To start the emulator next time use the same command without `-no-snapshot` option:  
-   ` λ ${ANDROID_SDK_ROOT}/emulator/emulator @NAME -no-boot-anim -gpu host -qemu -icount auto -smp 4,sockets=1,cores=2,threads=2,maxcpus=4`  
+   `${ANDROID_SDK_ROOT}/emulator/emulator @NAME -no-boot-anim -gpu host -qemu -icount auto -smp 4,sockets=1,cores=2,threads=2,maxcpus=4`  
 
 
 ### Running x86/x86_64 image on x86_64 host with maximum emulation performance:
@@ -95,9 +98,9 @@ Setup AVD emulator:
 1. Install Intel HAXM.
 
 2. Fix "cannot add library /usr/local/android-sdk/emulator/qemu/darwin-x86_64/lib64/vulkan/libvulkan.dylib: failed":  
-   ` ln -s ${ANDROID_SDK_ROOT}/emulator/lib64 ${ANDROID_SDK_ROOT}/emulator/qemu/darwin-x86_64/lib64`
+   `ln -s ${ANDROID_SDK_ROOT}/emulator/lib64 ${ANDROID_SDK_ROOT}/emulator/qemu/darwin-x86_64/lib64`
 
-3. ` ${ANDROID_SDK_ROOT}/emulator/emulator @NAME -no-boot-anim -gpu host`
+3. `${ANDROID_SDK_ROOT}/emulator/emulator @NAME -no-boot-anim -gpu host`
 
 More information: https://developer.android.com/studio/run/emulator-acceleration
 
