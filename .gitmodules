@@ -1,3 +1,6 @@
 [submodule "preinstall/rootAVD"]
 	path = preinstall/rootAVD
 	url = https://github.com/newbit1/rootAVD
+[submodule "preinstall/xposed-systemless"]
+	path = preinstall/xposed-systemless
+	url = https://github.com/vadimszzz/xposed-systemless
