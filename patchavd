@@ -3,7 +3,7 @@
 
 _(){ sed "s/^/    /" <($*); }
 
-if [[ -z $1 ]];then
+if [[ -z $1 ]]; then
     echo USAGE: patchavd PATH/TO/ramdisk.img
     echo 
     echo No image specified. Available:
@@ -16,6 +16,3 @@ fi
 
 cd $(dirname $0)/preinstall/rootAVD
 sh rootAVD.sh $1
-
-# echo
-# echo [!] Restart the AVD and flash required modules using Magisk.
