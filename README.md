@@ -12,11 +12,10 @@ Lifetime of a OkHttp request:
  *  Calling **`okhttp3.internal.connection.RealCall.execute()`** (synchronous) or **`okhttp3.RealCall.internal.connection.enqueue(Callback c)`** (asynchronous). This also includes calls that were only scheduled but not executed.
  *  Both `execute()` and `enqueue()` lead to **`okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp()`** that executes **`okhttp3.internal.http.RealInterceptorChain.proceed()`** and request is going through the interceptor chain:
     *  **`okhttp3.internal.http.RetryAndFollowUpInterceptor(OkHttpClient c)`**;
-    *  **`okhttp3.internal.closeQuietly`**;
     *  **`okhttp3.internal.http.BridgeInterceptor(CookieJar j)`**;
     *  **`okhttp3.internal.cache.CacheInterceptor(Cache c)`** serves requests from the cache and writes responses to the cache. Everything before this interceptor doesn't matter and doesn't guarantee a real network request.
     *  **`okhttp3.internal.connection.ConnectInterceptor`**;
-    *  **`okhttp3.internal.http.CallServerInterceptor`** which issues the actual request on the network.
+    *  **`okhttp3.internal.http.CallServerInterceptor(Boolean forWebSocket)`** which issues the actual request on the network.
 
 This module implements hooking `okhttp3.internal.http.CallServerInterceptor.intercept(Interceptor.Chain c)` and obtains the `okhttp3.Request` object. It logs requested URLs between the last user-supplied application interceptor and the OkHttp core.
 
