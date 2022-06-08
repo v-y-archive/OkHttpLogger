@@ -78,12 +78,12 @@ Setup AVD emulator:
 
    You can try this examples:  
 
-   `-qemu -icount auto -smp 6,sockets=1,cores=6,threads=1,maxcpus=6`
-   `-qemu -smp 6,sockets=1,cores=6,threads=1,maxcpus=6`
-   `-qemu -icount auto -smp 4,sockets=1,cores=2,threads=2,maxcpus=4`
-   `-qemu -smp 4,sockets=1,cores=2,threads=2,maxcpus=4`
-   `-qemu -icount auto -smp 2,sockets=1,cores=2,threads=1,maxcpus=2`
-   `-qemu -smp 2,sockets=1,cores=2,threads=1,maxcpus=2`
+   `-qemu -icount auto -smp 6,sockets=1,cores=6,threads=1,maxcpus=6`  
+   `-qemu -smp 6,sockets=1,cores=6,threads=1,maxcpus=6`  
+   `-qemu -icount auto -smp 4,sockets=1,cores=2,threads=2,maxcpus=4`  
+   `-qemu -smp 4,sockets=1,cores=2,threads=2,maxcpus=4`  
+   `-qemu -icount auto -smp 2,sockets=1,cores=2,threads=1,maxcpus=2`  
+   `-qemu -smp 2,sockets=1,cores=2,threads=1,maxcpus=2`  
 
 5. You should wait for 15 minutes even if you have the best hardware.
 
