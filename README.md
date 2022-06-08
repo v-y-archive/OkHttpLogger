@@ -5,7 +5,7 @@ This is a module for the [Xposed Framework](https://xposed.info) that logs all H
 
 ## Placing the Hooks
 
-Lifetime of a OkHttp request:
+Lifetime of an OkHttp request:
 
  *  A **`okhttp3.Request()` constructor or `okhttp3.Request$Builder`** might yield some false positives, since Request objects can be created without issuing an HTTP call.
  *  Calling **`okhttp3.OkHttpClient.newCall(Request r)`** isn't reliable.
